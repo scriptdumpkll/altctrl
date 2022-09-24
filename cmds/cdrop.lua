@@ -6,7 +6,7 @@ workspace.Ignored.Drop.ChildAdded:Connect(function(child)
         cur = cur + tonumber(g)
         if cur >= goal then
             game:service"RunService":UnbindFromRenderStep("CDROP_FUNCTION")
-            saymsg("finished")
+            saymsg("[done]")
         end
         if getgenv().LOOPDESTROY_ACTIVE == true then
             child:Destroy()
