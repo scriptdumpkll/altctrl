@@ -13,9 +13,9 @@ return function(...)
     local data = ProccessArgs(...)
     if data[2]:lower() == 'on' then
         Destroying = true
-        saymsg("on")
+        saymsg("[on]")
     else
-        saymsg("off")
+        saymsg("[off]")
         Destroying = false
     end
 end
